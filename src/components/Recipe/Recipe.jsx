@@ -11,8 +11,8 @@ const Recipe = () => {
     console.log(mealsItems)
     return (
         <div className='md:w-9/12 mx-auto w-full '>
-            <h3>Cooking Items : {mealsItems.length}</h3>
-            <div>
+            <h3 className='text-xl font-medium ml-4'>Cooking Items : {mealsItems.length}</h3>
+            <div className=''>
                 {
                     mealsItems.map((items, idx) => <Cooking key={idx} meal={items}></Cooking>)
                 }
