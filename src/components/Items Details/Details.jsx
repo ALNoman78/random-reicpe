@@ -13,10 +13,12 @@ const Details = () => {
 
     // console.log(items.meals[0]);
 
-    const { idMeal, strYoutube, strIngredient1, strMealThumb, strIngredient2, strIngredient3, strIngredient4, strIngredient5, strIngredient6, strIngredient7 } = item
+    const { strYoutube, strIngredient1, strMealThumb, strIngredient2, strIngredient3, strIngredient4, strIngredient5, strIngredient6, strIngredient7 } = item
     return (
         <div className='md:w-9/12 mx-auto w-full'>
-            <img src={strMealThumb} alt="" />
+            <div className='p-3 object-cover md:w-[400px] h-auto'>
+                <img className='rounded-xl' src={strMealThumb} alt="" />
+            </div>
             <h3 className='text-2xl font-bold mt-2'>Full Ingredients : </h3>
             <ul className='list-disc capitalize ml-8 my-4'>
                 <li>{strIngredient1}</li>

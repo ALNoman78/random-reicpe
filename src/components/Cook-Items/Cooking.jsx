@@ -8,8 +8,8 @@ const Cooking = ({ meal }) => {
         <div>
             <h3 className='text-xl font-bold'> Recipe Name : {strMeal}</h3>
             <p>Food Category : {strCategory}</p>
-            <div className='w-[400px] h-auto object-cover '>
-                <img className='rounded-xl' src={strMealThumb} alt="" />
+            <div className='object-cover p-3 md:w-[400px] h-auto'>
+                <img className='rounded-xl w-full ' src={strMealThumb} alt="" />
             </div>
             <Link to={`/items/${idMeal}`}>
                 <button className='btn btn-outline btn-info my-2'>More Details</button>
